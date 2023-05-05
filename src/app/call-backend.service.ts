@@ -1,0 +1,16 @@
+import { Injectable } from '@angular/core';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
+import { Observable} from "rxjs";
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CallBackendService {
+
+  constructor(private http:HttpClient) { }
+
+
+  getBackendResponse():Observable<any> {
+    return this.http.get(`https://openshift-backend-jpcaetano-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/hello`, {responseType: 'text'});
+  }
+}
