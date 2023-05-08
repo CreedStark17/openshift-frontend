@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Item } from "../interfaces/Item";
+import { Item } from "src/app/interfaces/Item";
 import {CallBackendService} from "../call-backend.service";
 
 @Component({
