@@ -15,6 +15,6 @@ export class CallBackendService {
   }
 
   getItems():Observable<any> {
-    return this.http.get('172.30.149.84:8080/items');
+    return this.http.get('http://172.30.149.84:8080/items');
   }
 }
