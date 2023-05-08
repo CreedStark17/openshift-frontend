@@ -15,6 +15,6 @@ export class CallBackendService {
   }
 
   getItems():Observable<any> {
-    return this.http.get('openshift-backend-from-pipeline.jpcaetano-dev.svc.cluster.local:8080/items');
+    return this.http.get('openshift-backend-from-pipeline:8080/items');
   }
 }
