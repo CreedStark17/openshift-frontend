@@ -11,10 +11,10 @@ export class CallBackendService {
 
 
   getBackendResponse():Observable<any> {
-    return this.http.get(`http://openshift-backend-from-pipeline.lcrodriguescsw-dev.svc.cluster.local:8080/items`, {responseType: 'text'});
+    return this.http.get(`http://openshift-backend-from-pipeline-lcrodriguescsw-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/hello`, {responseType: 'text'});
   }
 
   getItems():Observable<any> {
-    return this.http.get('https://openshift-backend-from-pipeline-lcrodriguescsw-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/items');
+    return this.http.get('http://openshift-backend-from-pipeline-lcrodriguescsw-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/items');
   }
 }
